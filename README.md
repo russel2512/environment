@@ -34,7 +34,7 @@ Version 2 adds current weather from openweathermap.org
 
 Hardware used
 - WIZnet WizFi360-EVB-Pico
-www.wiznet.io
+  - www.wiznet.io
 - Grove Shield for Pi Pico
 https://www.seeedstudio.com/Grove-Shield-for-Pi-Pico-v1-0-p-4846.html?queryID=32c8874c38648d638876b7be5b5925aa&objectID=4846&indexName=bazaar_retailer_products
 - Grove - Temperature, Humidity, Pressure and Gas Sensor for Arduino - BME680
