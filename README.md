@@ -47,3 +47,6 @@ https://www.seeedstudio.com/Grove-OLED-Yellow-Blue-Display-0-96-SSD1315-V1-0-p-5
 https://www.seeedstudio.com/Grove-Universal-4-Pin-Buckled-20cm-Cable-5-PCs-pack.html?queryID=1fc11df743882664d0ef0971b70f6ee8&objectID=1693&indexName=bazaar_retailer_products
 - Micro USB cable
 
+- The program is written in MicroPython. Thonny was used as the editor.
+- Program file name is code.py. This allows the program to autostart on powerup. 
+- 
