@@ -16,10 +16,10 @@ I created the project in 2 parts.
 
 Version 1 was created to test the WiFi connection and Internet connection. It also connects to a BME680 sensor, SDD1315 OLED to display the sensor data and an Alphanumeric display to display the current time.
 The program will:
-- Connect to an NPT server and sync the time to the onboard RTC 
+- Connect to an NPT server and sync the time to the onboard RTC (real time clock)
 - Displays time on the TM1637 alphanumeric display
-- Collect data from BME680
-- Display collected information on the serial monitor and SDD1315 OLED display
+- Collects data from BME680
+- Displays collected information on the serial monitor and SDD1315 OLED display
 - Data is sent to a MQTT broker and displayed on a Node Red Dashboard
 
 Version 2 adds current weather from openweathermap.org
@@ -34,20 +34,61 @@ Version 2 adds current weather from openweathermap.org
 
 Hardware used
 - WIZnet WizFi360-EVB-Pico
-  - www.wiznet.io
+www.wiznet.io
 - Grove Shield for Pi Pico
-  - https://www.seeedstudio.com/Grove-Shield-for-Pi-Pico-v1-0-p-4846.html?queryID=32c8874c38648d638876b7be5b5925aa&objectID=4846&indexName=bazaar_retailer_products
+https://www.seeedstudio.com/Grove-Shield-for-Pi-Pico-v1-0-p-4846.html?queryID=32c8874c38648d638876b7be5b5925aa&objectID=4846&indexName=bazaar_retailer_products
 - Grove - Temperature, Humidity, Pressure and Gas Sensor for Arduino - BME680
-  - https://www.seeedstudio.com/Grove-Temperature-Humidity-Pressure-and-Gas-Sensor-for-Arduino-BME680.html?queryID=323612fcdd044071b3abf9a28df4285f&objectID=100&indexName=bazaar_retailer_products
+https://www.seeedstudio.com/Grove-Temperature-Humidity-Pressure-and-Gas-Sensor-for-Arduino-BME680.html?queryID=323612fcdd044071b3abf9a28df4285f&objectID=100&indexName=bazaar_retailer_products
 - Grove - 4-Digit Display
-  - https://www.seeedstudio.com/Grove-4-Digit-Display.html?queryID=2875cfcd585f27ccc4190f6e032d17f4&objectID=1651&indexName=bazaar_retailer_products
+https://www.seeedstudio.com/Grove-4-Digit-Display.html?queryID=2875cfcd585f27ccc4190f6e032d17f4&objectID=1651&indexName=bazaar_retailer_products
 - Grove - OLED Yellow&Blue Display 0.96 (SSD1315)
-  - https://www.seeedstudio.com/Grove-OLED-Yellow-Blue-Display-0-96-SSD1315-V1-0-p-5010.html?queryID=f0746a190f7b5dcfe94963f483aaa663&objectID=5010&indexName=bazaar_retailer_products
+https://www.seeedstudio.com/Grove-OLED-Yellow-Blue-Display-0-96-SSD1315-V1-0-p-5010.html?queryID=f0746a190f7b5dcfe94963f483aaa663&objectID=5010&indexName=bazaar_retailer_products
 - Grove - Universal 4 Pin Buckled 20cm Cable
-  - https://www.seeedstudio.com/Grove-Universal-4-Pin-Buckled-20cm-Cable-5-PCs-pack.html?queryID=1fc11df743882664d0ef0971b70f6ee8&objectID=1693&indexName=bazaar_retailer_products
+https://www.seeedstudio.com/Grove-Universal-4-Pin-Buckled-20cm-Cable-5-PCs-pack.html?queryID=1fc11df743882664d0ef0971b70f6ee8&objectID=1693&indexName=bazaar_retailer_products
 - Micro USB cable
 
-
-- The program is written in MicroPython. Thonny was used as the editor.
-- Program file name is code.py. This allows the program to autostart on powerup. 
+- The programs are written in MicroPython. Thonny was used as the editor.
+- Program file name is code.py. This allows the program to autostart on powerup.
 - 
+
+
+**Circuit diagram**
+
+
+
+
+**Deployment:**
+
+This is an overview of the project deployment. You should have a general knowledge of RP2040. Information can be found at https://www.raspberrypi.com/products/raspberry-pi-pico/ and https://docs.wiznet.io/Product/Open-Source-Hardware/wizfi360-evb-pico. 
+
+This project was developed with MicroPython v1.19.1 deployed on the wizfi360-evb-pico. A good reference can be found at https://learn.adafruit.com/welcome-to-circuitpython.   
+Version 7.1.1 of CircuitPython (adafruit-circuitpython-raspberry_pi_pico-en_US-7.1.1.uf2) can be found here:
+https://adafruit-circuit-python.s3.amazonaws.com/bin/raspberry_pi_pico/en_US/adafruit-circuitpython-raspberry_pi_pico-en_US-7.1.1.uf2
+
+Install Thonny IDE to program the wizfi360-evb-pico. It can be found here: https://thonny.org/.
+
+Test MicroPython with the wizfi360-evb-pico using the Blink example program. 
+
+**Library deployment steps:**
+- Create **lib** folder on the board.
+- Download and copy the following libraries 
+   - https://github.com/mcauser/micropython-tm1637 (tm1637.py)
+	at line 186 make these changes:
+	#self.write([_SEGMENTS[38], _SEGMENTS[12]], 2) # degrees C
+     	self.write([_SEGMENTS[38], _SEGMENTS[15]], 2) # degrees F
+   - https://randomnerdtutorials.com/micropython-esp32-esp8266-bme680-web-server/ (bme680.py)
+   - https://github.com/stlehmann/micropython-ssd1306/blob/master/ssd1306.py (ssd1306.py)
+
+Copy the monitor code (WizFi360_design_ver1.py or WizFi360_design_ver2.py) from https://github.com/russel2512/environment.
+- Rename program to code.py (autorun)
+
+Connect the LEDs per the circuit diagram found in the GitHub project.
+
+**Setup a Raspberry Pi (Node Red is needed).** 
+- For information on Raspberry Pi deployment, see https://www.raspberrypi.com/.
+- For information on Mosquitto MQTT broker, see https://randomnerdtutorials.com/how-to-install-mosquitto-broker-on-raspberry-pi.
+- For information on Node Red, see https://nodered.org/docs/getting-started/raspberrypi.
+- Import the text from **NodeRed import.txt** into Node Red. You may need to modify MQTT broker information. Server - 'localhost' works ok in my configuration.Change the username and password.  These will need to be change in both the code and Node Red.
+  - username="rpi-pico"
+  - password="wiznet"
+- Add your city and openweathermap.org key.
