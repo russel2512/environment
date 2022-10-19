@@ -36,15 +36,15 @@ Hardware used
 - WIZnet WizFi360-EVB-Pico
   - www.wiznet.io
 - Grove Shield for Pi Pico
-https://www.seeedstudio.com/Grove-Shield-for-Pi-Pico-v1-0-p-4846.html?queryID=32c8874c38648d638876b7be5b5925aa&objectID=4846&indexName=bazaar_retailer_products
+  - https://www.seeedstudio.com/Grove-Shield-for-Pi-Pico-v1-0-p-4846.html?queryID=32c8874c38648d638876b7be5b5925aa&objectID=4846&indexName=bazaar_retailer_products
 - Grove - Temperature, Humidity, Pressure and Gas Sensor for Arduino - BME680
-https://www.seeedstudio.com/Grove-Temperature-Humidity-Pressure-and-Gas-Sensor-for-Arduino-BME680.html?queryID=323612fcdd044071b3abf9a28df4285f&objectID=100&indexName=bazaar_retailer_products
+  - https://www.seeedstudio.com/Grove-Temperature-Humidity-Pressure-and-Gas-Sensor-for-Arduino-BME680.html?queryID=323612fcdd044071b3abf9a28df4285f&objectID=100&indexName=bazaar_retailer_products
 - Grove - 4-Digit Display
-https://www.seeedstudio.com/Grove-4-Digit-Display.html?queryID=2875cfcd585f27ccc4190f6e032d17f4&objectID=1651&indexName=bazaar_retailer_products
+  - https://www.seeedstudio.com/Grove-4-Digit-Display.html?queryID=2875cfcd585f27ccc4190f6e032d17f4&objectID=1651&indexName=bazaar_retailer_products
 - Grove - OLED Yellow&Blue Display 0.96 (SSD1315)
-https://www.seeedstudio.com/Grove-OLED-Yellow-Blue-Display-0-96-SSD1315-V1-0-p-5010.html?queryID=f0746a190f7b5dcfe94963f483aaa663&objectID=5010&indexName=bazaar_retailer_products
+  - https://www.seeedstudio.com/Grove-OLED-Yellow-Blue-Display-0-96-SSD1315-V1-0-p-5010.html?queryID=f0746a190f7b5dcfe94963f483aaa663&objectID=5010&indexName=bazaar_retailer_products
 - Grove - Universal 4 Pin Buckled 20cm Cable
-https://www.seeedstudio.com/Grove-Universal-4-Pin-Buckled-20cm-Cable-5-PCs-pack.html?queryID=1fc11df743882664d0ef0971b70f6ee8&objectID=1693&indexName=bazaar_retailer_products
+  - https://www.seeedstudio.com/Grove-Universal-4-Pin-Buckled-20cm-Cable-5-PCs-pack.html?queryID=1fc11df743882664d0ef0971b70f6ee8&objectID=1693&indexName=bazaar_retailer_products
 - Micro USB cable
 
 
