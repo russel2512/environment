@@ -75,7 +75,7 @@ sendCMD_waitResp('AT+CWHOSTNAME="WizFi360_1"\r\n') #Set Host name
 
 # Log into the network
 sleep(.05)
-sendCMD_waitResp('AT+CWJAP_CUR="RTHomez","w1X2y3Z4Home2020cba"\r\n') #AP connecting
+sendCMD_waitResp('AT+CWJAP_CUR="network id","password"\r\n') #AP connecting
 sendCMD_waitResp('AT+CIPSTA_CUR?\r\n') # Display network connection
 led.value(1) # Connected
 
