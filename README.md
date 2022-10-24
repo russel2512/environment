@@ -59,7 +59,8 @@ Project build out:
 **D18  Grove TM1637**
 
 ![board - 2](https://user-images.githubusercontent.com/13513067/197628395-7908b9ed-a19d-4fc8-ad29-ac32a13e5b2e.jpg)
-**I2C0  Grove SSD1315     I2C1  Grove BME680**
+**I2C0  Grove SSD1315     
+I2C1  Grove BME680**
 
 **Circuit diagram**
 
