@@ -32,25 +32,33 @@ Version 2 adds current weather from openweathermap.org
 
 **Design:**
 
-Hardware used
+**Hardware design:**
+
+Bill of materials:
 - WIZnet WizFi360-EVB-Pico
 www.wiznet.io
 - Grove Shield for Pi Pico
-https://www.seeedstudio.com/Grove-Shield-for-Pi-Pico-v1-0-p-4846.html?queryID=32c8874c38648d638876b7be5b5925aa&objectID=4846&indexName=bazaar_retailer_products
+Grove Shield for Pi Pico v1
 - Grove - Temperature, Humidity, Pressure and Gas Sensor for Arduino - BME680
-https://www.seeedstudio.com/Grove-Temperature-Humidity-Pressure-and-Gas-Sensor-for-Arduino-BME680.html?queryID=323612fcdd044071b3abf9a28df4285f&objectID=100&indexName=bazaar_retailer_products
+BME680
 - Grove - 4-Digit Display
-https://www.seeedstudio.com/Grove-4-Digit-Display.html?queryID=2875cfcd585f27ccc4190f6e032d17f4&objectID=1651&indexName=bazaar_retailer_products
+TM1637
 - Grove - OLED Yellow&Blue Display 0.96 (SSD1315)
-https://www.seeedstudio.com/Grove-OLED-Yellow-Blue-Display-0-96-SSD1315-V1-0-p-5010.html?queryID=f0746a190f7b5dcfe94963f483aaa663&objectID=5010&indexName=bazaar_retailer_products
+SSD1315 
 - Grove - Universal 4 Pin Buckled 20cm Cable
-https://www.seeedstudio.com/Grove-Universal-4-Pin-Buckled-20cm-Cable-5-PCs-pack.html?queryID=1fc11df743882664d0ef0971b70f6ee8&objectID=1693&indexName=bazaar_retailer_products
+Grove Universal 4 Pin Buckled 20cm Cable 5 PCs pack
 - Micro USB cable
 
-- The programs are written in MicroPython. Thonny was used as the editor.
-- Program file name is code.py. This allows the program to autostart on powerup.
-- 
 
+Project build out:
+- Insert the WizFi360-EVB-Pico in the Grove Shield for Pi Pico socket 
+- Using a Grove - Universal 4 pin buckled 20cm cable, connect the Grove TM1637 to D18 on the shield
+- Using a 20cm cable, connect the Grove SSD1315 to I2C0 on the shield
+- Using a 20cm cable, connect the Grove BME680 to I2C1 on the shield 
+![board - 1](https://user-images.githubusercontent.com/13513067/197628294-9901b1eb-f349-4855-babd-a2cea341b099.jpg)
+D18 Grove TM1637 
+![board - 2](https://user-images.githubusercontent.com/13513067/197628395-7908b9ed-a19d-4fc8-ad29-ac32a13e5b2e.jpg)
+I2C0 Grove SSD1315    I2C1 Grove BME680 
 
 **Circuit diagram**
 
