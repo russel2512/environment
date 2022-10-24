@@ -56,9 +56,10 @@ Project build out:
 - Using a 20cm cable, connect the Grove SSD1315 to I2C0 on the shield
 - Using a 20cm cable, connect the Grove BME680 to I2C1 on the shield 
 ![board - 1](https://user-images.githubusercontent.com/13513067/197628294-9901b1eb-f349-4855-babd-a2cea341b099.jpg)
-D18 Grove TM1637 
+**D18  Grove TM1637**
+
 ![board - 2](https://user-images.githubusercontent.com/13513067/197628395-7908b9ed-a19d-4fc8-ad29-ac32a13e5b2e.jpg)
-I2C0 Grove SSD1315    I2C1 Grove BME680 
+**I2C0  Grove SSD1315     I2C1  Grove BME680**
 
 **Circuit diagram**
 
