@@ -34,7 +34,7 @@ Version 2 adds current weather from openweathermap.org
 
 **Hardware design:**
 
-Bill of materials:
+**Bill of materials:**
 - WIZnet WizFi360-EVB-Pico
 www.wiznet.io
 - Grove Shield for Pi Pico
