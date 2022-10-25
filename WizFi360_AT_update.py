@@ -42,7 +42,7 @@ sendCMD_waitResp('AT+CWDHCP_CUR=1,1\r\n') #DHCP on
 
 #log into the network
 utime.sleep(.5)
-sendCMD_waitResp('AT+CWJAP_CUR="RTHomez","w1X2y3Z4Home2020cba"\r\n') #AP connecting
+sendCMD_waitResp('AT+CWJAP_CUR="router","password"\r\n') #AP connecting
 sendCMD_waitResp('AT+CIPSTA_CUR?\r\n') #network chk
 
 sendCMD_waitResp('AT+CIUPDATE="http://wiki.wiznet.io/download/WizFi360/O11/WizFi360_SDK.img"\r\n')
