@@ -65,19 +65,18 @@ I2C1  Grove BME680**
 
 **Circuit diagram**
 ![image](https://user-images.githubusercontent.com/13513067/198863437-f55ce294-c906-491c-b505-6e9d20845711.png)
+If you're not using Grove parts, you can use this circuit diagram. You can source the boards from Banggood, eBay, etc.
 
+**Software buildout:**
 
-**Deployment:**
-
-This is an overview of the project deployment. You should have a general knowledge of RP2040. Information can be found at https://www.raspberrypi.com/products/raspberry-pi-pico/ and https://docs.wiznet.io/Product/Open-Source-Hardware/wizfi360-evb-pico. 
-
-This project was developed with MicroPython v1.19.1 deployed on the wizfi360-evb-pico. A good reference can be found at https://learn.adafruit.com/welcome-to-circuitpython.   
-Version 7.1.1 of CircuitPython (adafruit-circuitpython-raspberry_pi_pico-en_US-7.1.1.uf2) can be found here:
-https://adafruit-circuit-python.s3.amazonaws.com/bin/raspberry_pi_pico/en_US/adafruit-circuitpython-raspberry_pi_pico-en_US-7.1.1.uf2
+This is an overview of the project deployment environment. You should have a general knowledge of RP2040. Information can be found at https://www.raspberrypi.com/products/raspberry-pi-pico/ and https://docs.wiznet.io/Product/Open-Source-Hardware/wizfi360-evb-pico. 
+This project was developed with MicroPython v1.19.1 deployed on the wizfi360-evb-pico. The firmware can be found at https://micropython.org/download/rp2-pico/.   A good reference can be found at https://docs.micropython.org/en/latest/rp2/quickref.html.
+Update the board firmware to AT version:1.1.1.9 and can be found at https://github.com/wizfi/Release/tree/master/Binary.
+The easiest way to do the update is to use WizFi360_AT_update.py at https://github.com/russel2512/environment.
 
 Install Thonny IDE to program the wizfi360-evb-pico. It can be found here: https://thonny.org/.
 
-Test MicroPython with the wizfi360-evb-pico using the Blink example program. 
+Test MicroPython with the wizfi360-evb-pico using the Blink example program. (https://projects.raspberrypi.org/en/projects/getting-started-with-the-pico/5)
 
 **Library deployment steps:**
 - Create **lib** folder on the board.
