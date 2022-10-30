@@ -28,10 +28,6 @@ Version 2 adds current weather from openweathermap.org
 - Displays the current temputature on the TM1637 alphanumeric display
 - Displays weather data on the serial monitor
 
-
-
-**Design:**
-
 **Hardware design:**
 
 **Bill of materials:**
@@ -50,7 +46,7 @@ https://www.seeedstudio.com/Grove-Universal-4-Pin-Buckled-20cm-Cable-5-PCs-pack.
 - Micro USB cable
 
 
-Project build out:
+**Project build out:**
 - Insert the WizFi360-EVB-Pico in the Grove Shield for Pi Pico socket 
 - Using a Grove - Universal 4 pin buckled 20cm cable, connect the Grove TM1637 to D18 on the shield
 - Using a 20cm cable, connect the Grove SSD1315 to I2C0 on the shield
@@ -89,9 +85,13 @@ Test MicroPython with the wizfi360-evb-pico using the Blink example program. (ht
    - https://github.com/stlehmann/micropython-ssd1306/blob/master/ssd1306.py (ssd1306.py)
 
 Copy the monitor code (WizFi360_design_ver1.py or WizFi360_design_ver2.py) from https://github.com/russel2512/environment.
-- Rename program to code.py (autorun)
-
-Connect the LEDs per the circuit diagram found in the GitHub project.
+- Rename program to main.py (autorun) or you can run the code from Thonny.
+- Copy code to the Pico
+- Program changes needed to run on other networks:
+ - Set Host name (optional, current name is set to WizFi360_1)
+ - AP ID and password
+ - MQTT broker IP address
+Go to https://openweathermap.org/ and create an account. You will need your API key.
 
 **Setup a Raspberry Pi (Node Red is needed).**
 - For information on Raspberry Pi deployment, see https://www.raspberrypi.com/.
@@ -102,6 +102,13 @@ Connect the LEDs per the circuit diagram found in the GitHub project.
  - password="wiznet"
  - Add your city and openweathermap.org key.
 
+![image](https://user-images.githubusercontent.com/13513067/198896608-6257d31e-bf8f-4085-894b-4f0bccaa2726.png)
+
+![image](https://user-images.githubusercontent.com/13513067/198896644-f1cb3017-062b-4d50-86bc-119520d41df9.png)
+
+![image](https://user-images.githubusercontent.com/13513067/198896672-05cbfc93-793b-4a56-804c-3cd580c3a077.png)
+
+![image](https://user-images.githubusercontent.com/13513067/198896696-b40bad1b-454b-40fe-9e0f-e235e99c485c.png)
 
 
 **Proof of concept results:**
