@@ -94,14 +94,14 @@ Copy the monitor code (WizFi360_design_ver1.py or WizFi360_design_ver2.py) from 
 
 Connect the LEDs per the circuit diagram found in the GitHub project.
 
-**Setup a Raspberry Pi (Node Red is needed).** 
+**Setup a Raspberry Pi (Node Red is needed).**
 - For information on Raspberry Pi deployment, see https://www.raspberrypi.com/.
 - For information on Mosquitto MQTT broker, see https://randomnerdtutorials.com/how-to-install-mosquitto-broker-on-raspberry-pi.
 - For information on Node Red, see https://nodered.org/docs/getting-started/raspberrypi.
-- Import the text from **NodeRed import.txt** into Node Red. You may need to modify MQTT broker information. Server - 'localhost' works ok in my configuration.Change the username and password.  These will need to be change in both the code and Node Red.
-  - username="rpi-pico"
-  - password="wiznet"
-- Add your city and openweathermap.org key.
+- Import the text from NodeRed.txt into Node Red. You may need to modify MQTT broker information. Server - 'localhost' works ok in my configuration. Change the username and password.  These will need to be change in both the code and Node Red.
+ - username="rpi-pico"
+ - password="wiznet"
+ - Add your city and openweathermap.org key.
 
 
 **Proof of concept results:**
