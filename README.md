@@ -104,6 +104,7 @@ Connect the LEDs per the circuit diagram found in the GitHub project.
 - Add your city and openweathermap.org key.
 
 **Proof of concept results:**
+
 The board uses AT commands which are sometimes confusing to understand without examples. Note that you need to update the board firmware. I spent days trying to troubleshoot an MQTT issue that was fixed with an update.
 - The board connects easily to a router. 
 - The board works well with MicroPython. The board can use a standard Pico build and the libraries I used worked ok. 
@@ -111,12 +112,14 @@ The board uses AT commands which are sometimes confusing to understand without e
 All requirements for ++Versions 1 and 2** were meet.
 
 **Issues:**
+
 - The firmware needed to be updated. (I included a small program to update it. WizFi360_AT_update.py)
 - Documentation of the AT commands were confusing. I had to experiment with them to figure out how they worked. They do seem to be similar to ESP32 commands. 
 - I could not get GET commands to work. I would have liked to pull weather data directly off the site.
 - MQTT isn't fully implemented. I couldn't get multiple Topics to work. Again, this could be my fault with not fully understanding the documentation. 
 
 **Future enhancements:**
+
 These are just ‘blue sky’ ideas. Some may not be valid or work. The biggest ‘got ya’ was not getting GET to work and MQTT implementation not being complete.
 - Break up data for better data handling (ie, filling JASON fields and adding to databases).
 - Send BME680 sensor data to a database or an external site (i.e. ThingSpeak).
