@@ -104,6 +104,7 @@ Connect the LEDs per the circuit diagram found in the GitHub project.
  - Add your city and openweathermap.org key.
 
 
+
 **Proof of concept results:**
 
 The board uses AT commands which are sometimes confusing to understand without examples. Note that you need to update the board firmware. I spent days trying to troubleshoot an MQTT issue that was fixed with an update.
