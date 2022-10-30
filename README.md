@@ -64,8 +64,7 @@ Project build out:
 I2C1  Grove BME680**
 
 **Circuit diagram**
-
-
+![image](https://user-images.githubusercontent.com/13513067/198863437-f55ce294-c906-491c-b505-6e9d20845711.png)
 
 
 **Deployment:**
