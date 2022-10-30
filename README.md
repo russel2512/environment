@@ -117,7 +117,7 @@ The board uses AT commands which are sometimes confusing to understand without e
 - The board connects easily to a router. 
 - The board works well with MicroPython. The board can use a standard Pico build and the libraries I used worked ok. 
 - The Grove Pico shield worked well. It's convent that WIZnet kept the Pico pinouts. 
-All requirements for ++Versions 1 and 2** were meet.
+All requirements for **Versions 1 and 2** were meet.
 
 **Issues:**
 
